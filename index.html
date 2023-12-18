@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>MyPortfolioWebsite</title>
+  <script src="https://kit.fontawesome.com/f8a2c1df44.js"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="homeimg/logo1.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header"> Home </a></li>
+          <li><a href="#about"> About Me </a></li>
+          <li><a href="#services"> Services </a></li>
+          <li><a href="#portfolio"> Portfolio </a></li>
+          <li><a href="#contact"> Contact </a></li>
+          <i class="fas fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <section>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>Hi, I'm <span>Golddi</span><br>and this is my portfolio.</h1>
+          <a href="homeimg/BOJOSGGYLE_CV.pdf"  download class="btn btn2" >Download CV</a>
+        </div>
+        <div class="bubbles">
+          <div class="set">
+            <div id="bubble1"><img src="homeimg/star1.png"></div>
+            <div id="bubble2"><img src="homeimg/bubbles1.png"></div>
+            <div id="bubble3"><img src="homeimg/bubbles2.png"></div>
+            <div id="bubble4"><img src="homeimg/bubbles3.png"></div>
+            <div id="bubble5"><img src="homeimg/bubbles4.png"></div>
+            <div id="bubble6"><img src="homeimg/bubbles5.png"></div>
+            <div id="bubble7"><img src="homeimg/bubbles4.png"></div>
+            <div id="bubble8"><img src="homeimg/bubbles7.png"></div>
+            <div id="bubble9"><img src="homeimg/star2.png"></div>
+          </div>
+        </div>
+      </section>
+
+<!-------------about------------>
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+       <img src="homeimg/me.jpg">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p> Hey there! I'm Golddi Gyle Bojos, a creative individual who's passionate about turning ideas into reality. 
+          Beyond the professional realm, you'll find me read a lot of fictional novels and comics, draw a lot of things and 
+          create things that i find artisty. 
+          Through my journey in the world of information technology and freelancing has equipped me with skills in programming, 
+          designing, communication, and managing. I thrive on turning challenges into opportunities. An environments that demand 
+          creativity, innovation, and a solution-oriented mindset. 
+          My commitment to always on the lookout for ways to create new things that i've never did before 
+          which i personally think will add more and improve each of my skills that i have. 
+          Whether it's a project collaboration, a discussion let's connect and explore the endless 
+          possibilities together, feel free to reach out! </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br> Desinging Web/Application</li>
+              <li><span>Graphics</span><br> Graphics Designing</li>
+              <li><span>Art</span><br> Creating Digital Illustration</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>September 2021 - October 2021</span><br> Elliot Delicious Pizza<br> ⋰ Pizzeria Clerk and Maker</li>
+              <li><span>November 2021 - February 2022</span><br> Inspiro Relia Inc.<br> ⋰ Call Center Agent</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>PRIMARY</span><br>2014-2015<br>Manapla Elementary School</li>
+              <li><span>JUNIOR HIGH</span><br>2017-2019<br>San Isidro National Highschool</li>
+              <li><span>SENIOR HIGH</span><br>2019-2021<br> Asian Institute of Computer Studies<br> ⋰ Technical Vocational Livelihood - Information Communication Technology</li>
+              <li><span>TERTIARY</span><br>2022-2026<br> Rizal Technological University<br> ⋰ Bachelors of Science in Information Technology</li>
+              <li><span>2023</span><br>SimpliLearn SkillUp<br> ⋰ Basics of Data Structures and Algorithms</li>
+
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--------------services------------->
+<div id="services">
+  <div id="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+
+      <div class="card">
+        <div class="card-image3" id="application-design">
+          <img src="homeimg/puzzle.png">
+        </div>
+        <h2>UI/UX</h2>
+        <p>I bring ideas to life through thoughtful and 
+          visually stunning web and app design with a touch of 
+          creativity and user-centric design.</p>
+          <a href="#application-design-work" class="learn-more-link">Learn More</a>
+      </div>
+      
+      <div class="card">
+        <div class="card-image" id="web-development">
+          <img src="homeimg/code.png">
+        </div>
+        <h2>Web development</h2>
+        <p>Transforming ideas into functional and dynamic websites 
+          through the art of coding. I create seamless and responsive 
+          web solutions.</p>
+          <a href="#web-development-work" class="learn-more-link">Learn More</a>
+      </div>
+
+      <div class="card">
+        <div class="card-image2"id="graphic-design">
+          <img src="homeimg/pen.png">
+        </div>
+        <h2>Graphic Design</h2>
+        <p>I craft compelling and aesthetically pleasing designs 
+          and illustrations that communicate the essence of a 
+          brand or message.</p>
+          <a href="#graphic-design-work" class="learn-more-link">Learn More</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!------------portfolio------------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div id="application-design-work" class="work">
+        <img src="homeimg/work1.png">
+        <div class="layer">
+          <h3>Social Media Application Design</h3>
+          <p>The application facilitates connections among individuals within the campus, 
+            offering a platform for anonymous interactions. Exploring the dynamics of social 
+            connections in a campus environment while prioritizing user privacy.</p>
+          <a href="#hidden-page1" onclick="revealHiddenPage();"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div id="web-development-work" class="work">
+        <img src="homeimg/work2.png">
+        <div class="layer">
+          <h3>Website</h3>
+          <p>A website where it showcases a creative professional's best work and skills, 
+            providing a visual and interactive representation of their expertise, 
+            experience, and personal brand.</p>
+          <a href="#hidden-page2" onclick="revealHiddenPage();"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div id="graphic-design-work" class="work">
+        <img src="homeimg/work3.png">
+        <div class="layer">
+          <h3>Product Graphic Design</h3>
+          <p>A custom digital illustration featuring a business's logo integrated into 
+            a delectable cake design, adding a unique and visually appealing touch 
+            to enhance brand identity for a cake business.</p>
+          <a href="#hidden-page3" onclick="revealHiddenPage();"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+</div>
+
+<div id="hidden-page1" class="hidden-page" style="display: none;">
+  <h1><a href="#portfolio" class="close-button" onclick="hideHiddenPage('hidden-page1');"><i class="fa-solid fa-chevron-up"></i></a>  Social Media Application</h1>
+  <img src="homeimg/1.png">
+  <img src="homeimg/2.png">
+  <img src="homeimg/3.png">
+  <img src="homeimg/4.png">
+  <img src="homeimg/5.png">
+</div>
+
+<div id="hidden-page2" class="hidden-page" style="display: none;">
+  <h1><a href="#portfolio" class="close-button" onclick="hideHiddenPage('hidden-page2');"><i class="fa-solid fa-chevron-up"></i></a>  Website</h1>
+  <img src="homeimg/7.png">
+  <img src="homeimg/8.png">
+  <img src="homeimg/9.png">
+  <img src="homeimg/10.png">
+  <img src="homeimg/13.png">
+  <img src="homeimg/14.png">
+  <img src="homeimg/11.png">
+  <img src="homeimg/12.png">
+</div>
+
+<div id="hidden-page3" class="hidden-page" style="display: none;">
+  <h1><a href="#portfolio" class="close-button" onclick="hideHiddenPage('hidden-page3');"><i class="fa-solid fa-chevron-up"></i></a>  Digital Graphic Design</h1>
+  <img src="homeimg/6.png">
+</div>
+
+
+
+<!------contact----->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p> <i class="fa-regular fa-paper-plane"></i> golddiigyle@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> 09125371576</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/g.lddigyle/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/g.lddii._/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/golddi-gyle-bojos-61bb4a218"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="homeimg/BOJOSGGYLE_CV.pdf"  download class="btn btn2" >Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2" >Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p><i class="fa-solid fa-star"></i> Copyright © Golddi Gyle.</i></p>
+  </div>
+</div>
+
+<script>
+  function revealHiddenPage(hiddenPageId) {
+    const hiddenPage = document.getElementById(hiddenPageId);
+
+    hiddenPage.style.display = (hiddenPage.style.display === 'none') ? 'block' : 'none';
+
+    if (hiddenPage.style.display === 'block') {
+      const yOffset = -60; 
+      const y = hiddenPage.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  }
+
+  document.getElementById('application-design-work').addEventListener('click', function() {
+    revealHiddenPage('hidden-page1');
+  });
+
+  document.getElementById('web-development-work').addEventListener('click', function() {
+    revealHiddenPage('hidden-page2'); 
+  });
+
+  document.getElementById('graphic-design-work').addEventListener('click', function() {
+    revealHiddenPage('hidden-page3');
+  });
+
+  function hideHiddenPage(hiddenPageId) {
+    const hiddenPage = document.getElementById(hiddenPageId);
+
+    // Hide the hidden page
+    hiddenPage.style.display = 'none';
+  }
+
+  document.getElementById('hidden-page1').addEventListener('click', function() {
+    hideHiddenPage('hidden-page1');  // Hide the hidden page 1
+  });
+
+  document.getElementById('hidden-page2').addEventListener('click', function() {
+    hideHiddenPage('hidden-page2');  // Hide the hidden page 2
+  });
+
+  document.getElementById('hidden-page3').addEventListener('click', function() {
+    hideHiddenPage('hidden-page3');  // Hide the hidden page 3
+  });
+</script>
+
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for (tablink of tablinks) {
+      tablink.classList.remove("active-link")
+    }
+    for (tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu() {
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu() {
+    sidemenu.style.right = "-200px";
+  }
+
+  document.getElementById('web-development').addEventListener('click', function() {
+    
+    document.getElementById('web-development-work').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  document.getElementById('graphic-design').addEventListener('click', function() {
+    
+    document.getElementById('graphic-design-work').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  document.getElementById('application-design').addEventListener('click', function() {
+    
+    document.getElementById('application-design-work').scrollIntoView({ behavior: 'smooth' });
+  });
+
+</script>
+
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxGcf6ACrF1cp8OR5mVAzRDs_ZvDBpGcqe6a9_6DAwManMz0WgeGPtIDfZFt28__daSWA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message Sent Successfully";
+          setTimeout(function () {
+            msg.innerHTML = "";
+          }, 5000);
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+</body>
+</html>
